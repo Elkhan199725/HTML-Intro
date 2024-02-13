@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Online Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Existing styles remain unchanged */
+        
+        /* New Styles */
+        .banner {
+            background-image: url('https://via.placeholder.com/1200x400'); /* Replace with a real image URL */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .newsletter {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Enhancements for responsiveness */
+        @media (max-width: 768px) {
+            .product {
+                width: calc(50% - 20px);
+            }
+            .banner {
+                font-size: 32px;
+                height: 300px;
+            }
+            .newsletter input[type="email"] {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: calc(100% - 20px);
+            }
+            .banner {
+                font-size: 24px;
+                height: 200px;
+            }
+            .newsletter input[type="email"] {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Enhanced Online Store</h1>
+</div>
+
+<div class="banner">Welcome to Our Store</div> <!-- Banner Section -->
+
+<div class="product-container">
+    <!-- Products go here -->
+</div>
+
+<div class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+</div>
+
+<div class="footer">
+    <p>© 2024 Enhanced Online Store. All rights reserved.</p>
+</div>
+
+</body>
+</html>
