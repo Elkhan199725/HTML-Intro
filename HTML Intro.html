@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e9ecef; /* Soft background color */
+            font-family: Arial, sans-serif; /* Use a modern font */
+        }
+
+        .form-container {
+            width: 350px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+            text-align: center; /* Center-align form content */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #495057; /* Dark gray for text */
+        }
+
+        input[type=text], input[type=password] {
+            width: calc(100% - 20px); /* Full width minus padding */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ced4da; /* Lighter border color */
+            border-radius: 5px; /* Rounded borders for inputs */
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px; /* Rounded borders for button */
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px; /* Larger font size for button */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        .checkbox-and-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .forgot-password {
+            color: #007bff; /* Make the link color match the button */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        .sign-up-text {
+            margin-top: 20px;
+            color: #6c757d; /* Muted text color for less emphasis */
+        }
+
+        .sign-up-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sign-up-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Login to Your Account</h2>
+    <form action="/submit-your-form-processing-url" method="post">
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <div class="checkbox-and-link">
+            <div>
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+            <a href="/path-to-forgot-password" class="forgot-password">Forgot Password?</a>
+        </div>
+
+        <button type="submit" id="loginButton">Login</button>
+    </form>
+    <div class="sign-up-text">
+        Don't have an account? <a href="/path-to-sign-up" class="sign-up-link">Sign Up</a>
+    </div>
+</div>
+
+</body>
+</html>
