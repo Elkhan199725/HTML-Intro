@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h2 {
+    color: #0072ff;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+button {
+    background-image: linear-gradient(145deg, #ff9190, #ffcd61);
+    color: #fff;
+    padding: 12px 24px;
+    margin: 20px 10px;
+    border: none;
+    border-radius: 25px; /* More pronounced rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+span{
+    color: brown;
+    font-weight: bold;
+    font-style: italic;
+}
+
+button:hover, button:focus {
+    background-image: linear-gradient(145deg, #ffcd61, #ff9190);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+img {
+    border-radius: 10px; /* Rounded corners for the image */
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
